@@ -1,0 +1,19 @@
+<ng-template cdkConnectedOverlay
+             [cdkConnectedOverlayOrigin]="trigger"
+             [cdkConnectedOverlayOpen]="isOpen">
+
+  <div class="takeover" [@slideContent]="animationState">
+    <div class="takeover__header">
+      <ng-content select="[section=header]"></ng-content>
+    </div>
+    <div class="takeover__body">
+      <ng-content select="[section=body]"></ng-content>
+    </div>
+    <div class="takeover__footer">
+      <ng-content select="[section=footer]">
+      </ng-content>
+    </div>
+  </div>
+
+
+</ng-template>

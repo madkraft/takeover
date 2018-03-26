@@ -1,0 +1,48 @@
+
+@media screen and (min-width: 600px) {
+  :host {
+    display: none;
+  }
+}
+
+.takeover {
+  /*animation: slide-from-bottom 200ms;*/
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.takeover__header {
+  background: cornflowerblue;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.takeover__body {
+  background: beige;
+  flex: 1 0 auto;
+}
+
+.takeover__footer {
+  background: pink;
+}
+
+/*@keyframes slide-from-bottom {*/
+  /*0% {*/
+    /*opacity: 0;*/
+    /*transform: translate3d(0, 100%, 0);*/
+  /*}*/
+
+  /*100% {*/
+    /*opacity: 1;*/
+    /*transform: translate3d(0, 0, 0);*/
+  /*}*/
+/*}*/
